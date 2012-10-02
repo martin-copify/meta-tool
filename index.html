@@ -1,0 +1,41 @@
+<html>
+<head>
+	<meta charset='utf-8'>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+</head>
+<body>
+	<form id='meta-form'>
+		<label>URL</label>
+		<input name="url" id="url" type="text"></input>
+		<label>Keyword 1</label>
+		<input name="keyword_1" id="keyword_1" type="keyword_1"></input>
+		<label>Keyword 2</label>
+		<input name ="keyword_2" id="keyword_2" type="keyword_2"></input>
+		<label>Domain/Brand</label>
+		<input name ="domain" id="domain" type="domain"></input>
+		<label>Call to action</label>
+		<input name ="call" id="call" type="call"></input>
+	
+		<input name ="submit" id="submit" type="submit" value="Go!"></input>
+	</form>
+	<div id="result">
+		result....
+	</div>
+	<script type="text/javascript">
+		$('#meta-form').submit(function() {
+		  var url = $('#url').val();
+		  var keyword_1 = $('#keyword_1').val();
+		  var keyword_2 = $('#keyword_2').val();
+		  var domain = $('#domain').val();
+		  var call = $('#call').val();
+		  console.log('Form button pressed!');
+		  console.log(url);
+		  console.log(keyword_1);
+		  console.log(keyword_2);
+		  console.log(domain);
+	  	  console.log(call);
+		  return false;
+		});
+	</script>
+</body>
+</html>
